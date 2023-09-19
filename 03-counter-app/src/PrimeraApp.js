@@ -5,7 +5,7 @@
 
 import PropTypes from 'prop-types'
 //FC
-const PrimeraApp = ({ saludo }) => {
+const PrimeraApp = ({ saludo, subtitulo }) => {
     // console.log('props', props)
 
     // const saludo = '¡Hola Mundo!';
@@ -18,7 +18,7 @@ const PrimeraApp = ({ saludo }) => {
             {/* <h1>{props.saludo}</h1> */}
             {/* <h1>{saludo}</h1> */}
             {/* <pre>{JSON.stringify(myObject, null, 3)}</pre> */}
-            <p>Mi primer aplicación</p>
+            <p>{subtitulo}</p>
 
 
         </>
@@ -27,6 +27,10 @@ const PrimeraApp = ({ saludo }) => {
 
 PrimeraApp.propTypes = {
     saludo: PropTypes.string.isRequired,
+}
+
+PrimeraApp.defaultProps = {
+    subtitulo: 'Soy un Subtitulo',
 }
 
 export default PrimeraApp;
