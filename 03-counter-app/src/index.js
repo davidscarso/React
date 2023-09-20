@@ -18,6 +18,6 @@ const root = createRoot(divRoot);
 
 // root.render(<PrimeraApp saludo='Hola Mundo' />);
 
-root.render(<CounterApp value={0} />);
+root.render(<CounterApp />);
 
 // root.render(<PrimeraApp saludo="¡Hola Mundo!" />);
