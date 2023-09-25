@@ -8,11 +8,14 @@ const apellido = 'Herrera';
 // const nombreCompleto = nombre + ' ' + apellido;
 const nombreCompleto = `${nombre} ${apellido}`;
 
-console.log(nombreCompleto);
+// console.log(nombreCompleto);
 
 
-function getSaludo(nombre) {
+export function getSaludo(nombre) {
+    if (nombre === undefined)
+        return 'Hola Carlos!';
+
     return 'Hola ' + nombre;
 }
 
-console.log(`Este es un texto: ${getSaludo(nombre)}  `);
+// console.log(`Este es un texto: ${getSaludo(nombre)}  `);
